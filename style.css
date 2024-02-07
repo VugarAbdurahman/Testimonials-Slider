@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* write your CSS here */
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.slideContainer {
+  scroll-behavior: smooth;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.title h1 {
+  font-size: 38px;
+  font-weight: bold;
+  color: #0b163f;
+}
+.arrows {
+  display: flex;
+}
+.arrow {
+  cursor: pointer;
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #0b163f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow:hover {
+  background-color: #0037ff9d;
+}
+
+.cards {
+  display: flex;
+  width: 1755px;
+}
+
+.card {
+  width: 398px;
+  background-color: #def4ed;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 7px 9px 0px 2px rgba(91, 178, 151, 1);
+  -webkit-box-shadow: 7px 9px 0px 2px rgba(91, 178, 151, 1);
+  -moz-box-shadow: 7px 9px 0px 2px rgba(91, 178, 151, 1);
+}
+
+.card2 {
+  background-color: #fcdde1;
+  box-shadow: 7px 9px 0px 2px rgba(254, 107, 126, 1);
+  -webkit-box-shadow: 7px 9px 0px 2px rgba(254, 107, 126, 1);
+  -moz-box-shadow: 7px 9px 0px 2px rgba(254, 107, 126, 1);
+}
+.card3 {
+  background-color: #ceddff;
+  box-shadow: 7px 9px 0px 2px rgba(23, 92, 255, 1);
+  -webkit-box-shadow: 7px 9px 0px 2px rgba(23, 92, 255, 1);
+  -moz-box-shadow: 7px 9px 0px 2px rgba(23, 92, 255, 1);
+}
+
+.card4 {
+  background-color: #fcdde1;
+  box-shadow: 7px 9px 0px 2px rgba(254, 107, 126, 1);
+  -webkit-box-shadow: 7px 9px 0px 2px rgba(254, 107, 126, 1);
+  -moz-box-shadow: 7px 9px 0px 2px rgba(254, 107, 126, 1);
+}
+.card:not(:last-child) {
+  margin-right: 50px;
+}
+.card .card-title {
+  margin: 10px 0;
+  color: #0b163f;
+  font-size: 18px;
+}
+
+.card .card-text {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  color: #202020;
+}
+
+.card .user {
+  margin-top: 30px;
+  display: flex;
+}
+
+.card .user img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.card .user .name-career {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.card .user .name-career h1 {
+  font-weight: 400;
+  font-size: 15px;
+  color: #0b163f;
+}
+.card .user .name-career p {
+  font-size: 12px;
+}
+
+@media (max-width: 730px) {
+  .title h1 {
+    font-size: 25px;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+  }
+  .cards {
+    width: 1361px;
+  }
+  .card {
+    width: 300px;
+  }
+
+  .card .card-title {
+    font-size: 14px;
+  }
+  .card .card-text {
+    font-size: 12px;
+  }
+
+  .card .user {
+    margin-top: 15px;
+  }
+
+  .card .user img {
+    width: 40px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .title h1 {
+    font-size: 19px !important;
+  }
+}
